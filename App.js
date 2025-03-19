@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
 export default function App() {
 
@@ -13,6 +13,14 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>{name}</Text>
+      <TextInput 
+      keyboardType='numeric'
+      style = {{
+        borderColor: "violet",
+        borderWidth: 1,
+        padding: 10      
+        }}/>
+        <Button title='Theme' />
       <Text style={styles.text}>{age}</Text>
     </View>
   );
